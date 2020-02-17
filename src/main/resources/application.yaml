@@ -1,0 +1,19 @@
+elide:
+  pageSize: 1000
+  maxPageSize: 10000
+  json-api:
+    path: /
+    enabled: true
+  graphql:
+    path: /graphql
+    enabled: true
+  swagger:
+    path: /doc
+    enabled: true
+    name: 'My Awesome Service'
+    version: "1.0"
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+server.port: 3000
