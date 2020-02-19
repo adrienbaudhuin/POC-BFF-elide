@@ -21,7 +21,7 @@
         </dependency>
         <dependency>
             <groupId>com.yahoo.elide</groupId>
-            <artifactId>elide-datastore-inmemorydb</artifactId>
+            <artifactId>elide-datastore-noop</artifactId>
             <version>${elide.version}</version>
         </dependency>
     </dependencies>

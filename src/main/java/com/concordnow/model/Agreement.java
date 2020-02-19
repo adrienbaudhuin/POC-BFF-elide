@@ -17,4 +17,37 @@ public class Agreement {
 
 	@ManyToMany
 	private Set<User> users;
+
+	@Override
+	public String toString() {
+		return "Agreement{" +
+				"uid='" + uid + '\'' +
+				", content='" + content + '\'' +
+				", users=" + users +
+				'}';
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(final String content) {
+		this.content = content;
+	}
+
+	public Set<User> getUsers() {
+		return users;
+	}
+
+	public void setUsers(final Set<User> users) {
+		this.users = users;
+	}
+
+	public String getUid() {
+		return uid;
+	}
+
+	public void setUid(final String uid) {
+		this.uid = uid;
+	}
 }
